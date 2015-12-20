@@ -1,0 +1,7 @@
+#Remove all .DS_Store (MAC) files from repo
+.DS_Store
+
+#Remove all pyc files
+*.pyc
+
+
