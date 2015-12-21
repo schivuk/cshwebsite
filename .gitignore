@@ -4,4 +4,6 @@
 #Remove all pyc files
 *.pyc
 
+csh/venv
 
+csh/staticfiles

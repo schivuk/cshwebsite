@@ -47,7 +47,7 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="{% static 'bootweb/images/LogoProfile/myLogo.png' %}" alt="logo"></a>
+              <a class="navbar-brand" href="#home"><img src="{% static 'bootweb/images/LogoProfile/myLogo.png' %}" alt="logo" height="45" width="250"></a>
               <!-- #Logo Ends -->
 
 
@@ -88,7 +88,7 @@
       <div class="carousel-inner">
 
         <!-- Item 1 -->
-        <div class="item">
+        <div class="item active">
           <img src="{% static 'bootweb/images/slideshow/cmu_1.jpg' %}" alt="banner">
         </div>
         <!-- #Item 1 -->
@@ -113,7 +113,7 @@
 
 
 
-<!-- Cirlce Starts -->
+<!-- About section Starts -->
 <div id="about"  class="container spacer about">
 <h2 class="text-center wowload fadeInUp"><i class="fa fa-info"></i> About Me</h2>  
   <div class="row">
@@ -140,7 +140,7 @@
   </div>
 
 </div>
-<!-- #Cirlce Ends -->
+<!-- #About section Ends -->
 
 
 <!-- projects -->
@@ -150,77 +150,258 @@
         <img src="{% static 'bootweb/images/projects/pattern_rec_demo.jpg' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Action Recognition</h2>
-            <p>Classification of actions in videos using a combination of convolutional and recurrent neural networks<br>
-            <a href="{% static 'bootweb/images/projects/architecture_image.jpg' %}" title="1" data-gallery>View more</a></p>            
+            <p>Classification of actions in videos<br>
+            <a data-toggle="modal" href="#actVid">View More</a>
+
+            </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Action Recognition -->                
+    <div class="modal fade" id="actVid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">3 Stream Recurrent Neural Network for Action Recognition</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/architecture_image.jpg' %}" alt=""></p>
+            <p align="left">We proposed and evaluated several deep network architectures that combine context and sound information across time in videos to accurately classify human actions. We used a combination of 3 streams of both convolutional and recurrent neural networks using Long Short-Term Memory (LSTM) cells to construct the classifier and pooled their feature output for classification. The architecture and classifier were evaluated on the UCF-101 dataset, and achieved a 74% accuracy. The computational expense was reduced by almost 6-fold as compared to traditional models, while still achieving very competitve results.</p>
+            <p align="left"> <b>Technologies Used:</b> Python, Neon Deep Learning Framework Framework, Matlab</p>
+            <p align="left"><a href="https://github.com/schivuk/3StreamActionRecognition/blob/master/3%20Stream%20RNN%20for%20Action%20Recognition.pdf" target="_blank">Paper for the project</a></p>
+            <p align="left"><a href="https://github.com/mwoodson1/PatternRec-Project" target="_blank">Project Repository</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/paxosbox.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>PaxosBox</h2>
-            <p>A shared storage system using Paxos<br>
-            <a href="{% static 'bootweb/images/projects/paxosbox.png' %}" title="1" data-gallery>View more</a></p>            
+            <p>A distributed shared storage system<br>
+            <a data-toggle="modal" href="#paxosBox">View More</a>
+          </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Paxos Box -->                
+    <div class="modal fade" id="paxosBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">PaxosBox</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/paxosbox.png' %}" alt=""></p>
+            <p align="left">PaxosBox is a web application for uploading and viewing files. It is a distributed and shared storage system, that uses our Paxos (algorithm to solve consensus in a network of unreliable machines) implementation to handle contention amongst multiple users and concurrent uploads of files. Data uploaded to the storage system is replicated across 3 nodes and is scaled depending on the load, and holds an eventually consistent state across all the paxos nodes.</p>
+            
+            <p align="left"> <b>Technologies Used:</b> Go, HTML, CSS, JavaScript</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/blind_navigation.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Blind Navigation</h2>
             <p>Help blind individuals navigate using echolocation<br>
-            <a href="{% static 'bootweb/images/projects/blind_navigation.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#blindNav">View More</a>
+            </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Blind Navigation -->                
+    <div class="modal fade" id="blindNav" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Blind Navigation</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/blind_navigation.png' %}" alt=""></p>
+            <p align="left">Description for blind navigation</p>
+
+            <p align="left"> <b>Technologies Used:</b> Java, C# (Unity)</p>
+
+            <p align="left"><a href="https://github.com/EchoExplorer/EchoGame" target="_blank">Project Repository</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/scenic_routes_network.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2 align="center">Scenic Routes</h2>
             <p>Provide scenic route suggestions using crowdsourced data<br>
-            <a href="{% static 'bootweb/images/projects/scenic_routes_network.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#scenicRoutes">View More</a>
+          </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Scenic Routes -->                
+    <div class="modal fade" id="scenicRoutes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Scenic Routes Network</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/scenic_routes_network.png' %}" alt=""></p>
+            <p align="left">Description for scenic routes</p>
+            
+            <p align="left"> <b>Technologies Used:</b> Python, Javascript, HTML, CSS, jQuery, AJAX</p>
+            
+            <p align="left"><a href="theprakashes.herokuapp.com" target="_blank">Web application hosted on Heroku</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/whacamole.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Whac-A-Mole</h2>
             <p>The Whac-A-Mole game on a Freescale HC-12 microcontroller<br>
-            <a href="{% static 'bootweb/images/projects/whacamole.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#whacaMole">View More</a>
+          </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Whac-A-Mole -->                
+    <div class="modal fade" id="whacaMole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Whac-A-Mole</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/whacamole.png' %}" alt=""></p>
+            <p align="left">Description for whac a mole</p>
+
+            <p align="left"> <b>Technologies and Hardware Used:</b> C, Freescale H-12 microcontroller</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
      
      <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/socialnetwork.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Social Analytics</h2>
             <p>Classification of user data using Naive Bayes<br>
-            <a href="{% static 'bootweb/images/projects/socialnetwork.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#socialAnalytics">View More</a>
+          </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Social Analytics -->                
+    <div class="modal fade" id="socialAnalytics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Social Analytics Framework</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/socialnetwork.png' %}" alt=""></p>
+            <p align="left">Description for social analytics framework</p>
+
+            <p align="left"> <b>Technologies Used:</b> Java, Java Swing Framework</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/bikedashboard.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Bike Dashboard</h2>
             <p>A Bike Display with safety features and commuting information<br>
               <!-- Integrated sensors and LED matrix into a bike display -->
-            <a href="{% static 'bootweb/images/projects/bikedashboard.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#bikeDashboard">View More</a>
+          </p>            
         </figcaption>
     </figure>
+
+    <!-- Modal for Bike Dashboard -->                
+    <div class="modal fade" id="bikeDashboard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Bike Dashboard</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/bikedashboard.png' %}" alt=""></p>
+            <p align="left">Description for bike dashboard</p>
+
+            <p align="left"> <b>Technologies and Hardware Used:</b> Arduino, C, C++ </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <figure class="effect-oscar  wowload fadeInUp">
         <img src="{% static 'bootweb/images/projects/more_lsp_bitcoin.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>More</h2>
             <p>View other projects such as: Distributed Bitcoin Miner, MapReduce, and more<br>
-            <a href="{% static 'bootweb/images/projects/more_lsp_bitcoin.png' %}" title="1" data-gallery>View more</a></p>            
+            <a data-toggle="modal" href="#moreProjects">View More</a>
+          </p>            
         </figcaption>
     </figure>
-    <!-- <figure class="effect-oscar  wowload fadeInUp">
-        <img src="{% static 'bootweb/images/portfolio/9.jpg' %}" alt="img01"/>
-        <figcaption>
-            <h2>Coffee</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="{% static 'bootweb/images/portfolio/9.jpg' %}" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure> -->
 
+    <!-- Modal for More Projects -->                
+    <div class="modal fade" id="moreProjects" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">More Projects</h4>
+          </div>
+          <div class="modal-body">
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/more_lsp_bitcoin.png' %}" alt=""></p>
+            <p align="left">Description for more projects</p>
+
+            <p align="left"> <b>Technologies Used:</b> Java, Go</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
      
 </div>
 <!-- projects -->
