@@ -232,7 +232,9 @@
           </div>
           <div class="modal-body">
             <p><img class="img-responsive" src="{% static 'bootweb/images/projects/blind_navigation.png' %}" alt=""></p>
-            <p align="left">Description for blind navigation</p>
+            <p align="left">I'm currently working with Prof. Pulkit Grover on a project to help blind individuals navigate using echolocation as part of my senior honors research. I'm developing an Android app for blind individuals to learn the controls and train themselves to get accustomed to using echoes to navigate surroundings. The project involves understanding the complexity in using echoes as a means of navigation, difference in hearing in left and right ears and head-related transfer functions (HRTFs). The app is continually tested on blind participants through research studies and improved using their feedback. </p>
+
+            <p align="left">The project received a Google research award in the summer of 2015.</p>
 
             <p align="left"> <b>Technologies Used:</b> Java, C# (Unity)</p>
 
@@ -265,11 +267,13 @@
           </div>
           <div class="modal-body">
             <p><img class="img-responsive" src="{% static 'bootweb/images/projects/scenic_routes_network.png' %}" alt=""></p>
-            <p align="left">Description for scenic routes</p>
+            <p align="left">Scenic Routes Network is a web application designed and implemented using Django, to provide scenic route suggestions using crowdsourced data and the Google Maps API. It is intended to help tourists and people making long road trips discover popular locations to stop at. The algorithm efficiently determines these popular locations, at evenly spaced intervals of the journey. Users can create public profiles, favorite paths, and vote (like) locations submitted by others. </p>
+
+            <p align="left">The project was selected as one of the 4 best projects out of over 50 projects to present to the class. </p>
             
             <p align="left"> <b>Technologies Used:</b> Python, Javascript, HTML, CSS, jQuery, AJAX</p>
             
-            <p align="left"><a href="theprakashes.herokuapp.com" target="_blank">Web application hosted on Heroku</a></p>
+            <p align="left"><a href="http://theprakashes.herokuapp.com" target="_blank">Web application hosted on Heroku</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -298,7 +302,7 @@
           </div>
           <div class="modal-body">
             <p><img class="img-responsive" src="{% static 'bootweb/images/projects/whacamole.png' %}" alt=""></p>
-            <p align="left">Description for whac a mole</p>
+            <p align="left">Created the Whac-A-Mole game on a Freescale HC-12 microcontroller using LEDs and pushbuttons. Implemented ability to adjust brightness and speed (difficulty) of the LEDs using pulse width modulation (PWM), analog-to-digital (A/D) conversion, and a potentiometer. Other concepts used are watchdog timers and timer interrupts to track time elapsed in the game. The game score and time elapsed were displayed on a LCD display. </p>
 
             <p align="left"> <b>Technologies and Hardware Used:</b> C, Freescale H-12 microcontroller</p>
           </div>
@@ -310,7 +314,7 @@
     </div><!-- /.modal -->
      
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="{% static 'bootweb/images/projects/socialnetwork.png' %}" alt="img01" height="280" width="421"/>
+        <img src="{% static 'bootweb/images/projects/social_network_cropped.png' %}" alt="img01" height="280" width="421"/>
         <figcaption>
             <h2>Social Analytics</h2>
             <p>Classification of user data using Naive Bayes<br>
@@ -325,11 +329,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Social Analytics Framework</h4>
+            <h4 class="modal-title">Social Network Analytics Framework</h4>
           </div>
           <div class="modal-body">
-            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/socialnetwork.png' %}" alt=""></p>
-            <p align="left">Description for social analytics framework</p>
+            <p><img class="img-responsive" src="{% static 'bootweb/images/projects/social_network_cropped.png' %}" alt=""></p>
+            <p align="left">Social Network Analytics Framework is framework themed around social networks, to classify any user text data into categories using a Gaussian Na&iuml;ve Bayes algorithm for further analysis to be performed based on the categorization of data. A cache was added for quicker retrieval of data for repeated requests. The GUI for the application was created using the Java Swing framework. </p>
+
+            <p align="left">The project was selected as the best framework in the course out of 43 submissions.</p>
 
             <p align="left"> <b>Technologies Used:</b> Java, Java Swing Framework</p>
           </div>
@@ -361,9 +367,11 @@
           </div>
           <div class="modal-body">
             <p><img class="img-responsive" src="{% static 'bootweb/images/projects/bikedashboard.png' %}" alt=""></p>
-            <p align="left">Description for bike dashboard</p>
+            <p align="left">Designed a bike display with safety features using various sensors such as a speedometer and light sensor to reflect bike-commuting data, and push buttons to trigger turning signals. Integrated an LED matrix and LCD display to display the turning signals and commuting data respectively. </p>
 
-            <p align="left"> <b>Technologies and Hardware Used:</b> Arduino, C, C++ </p>
+            <p align="left">The project was implemented during the Build18 symposium, an annual engineering hackathon at Carnegie Mellon University. </p>
+
+            <p align="left"> <b>Technologies and Hardware Used:</b> Arduino Uno, C, C++ </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -392,9 +400,15 @@
           </div>
           <div class="modal-body">
             <p><img class="img-responsive" src="{% static 'bootweb/images/projects/more_lsp_bitcoin.png' %}" alt=""></p>
-            <p align="left">Description for more projects</p>
+            <p align="left">Live Sequence Protocol (LSP) and Dsitributed Bitcoin Miner: Implemented a homegrown protocol for providing reliable communication with client and server APIs on top of the Internet UDP protocol. Incorporated features to provide in-order packet streaming, message integrity, congestion control (packet buffering), and client and server failure-handling, to create a robust system. Integrated the LSP to implement a distributed bitcoin miner to crack the smallest hash value and mine bitcoins. </p>
 
-            <p align="left"> <b>Technologies Used:</b> Java, Go</p>
+            <p align="left"> <b>Technologies Used:</b> Go</p>
+
+            <p align="left">Distributed MapReduce Framework: Built a distributed system to create a MapReduce framework to process large data sets. Used network sockets for communication between worker servers. Computation distributed amongst the worker servers is described by end-users as a plug-in to the framework. Functionality to handle server failures at any stage of MapReduce was also added. </p>
+
+            <p align="left"> <b>Technologies Used:</b> Java</p>
+
+            <p align="left"> <a href="https://github.com/schivuk" target="_blank">View these and more projects such as a Rubik's cube simulator and solver and a Recipe Designer on my GitHub page</a> </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
